@@ -175,6 +175,79 @@ button:hover {
   background-color: #3949ab;
 }
 
+.cancel-button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-button:hover {
+  background-color: #b71c1c;
+}
+
+#cancel-container {
+  border-left: 4px solid #d32f2f;
+}
+
+#cancel-container h3 {
+  color: #d32f2f;
+}
+
+.tab-container {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.tab-button.active {
+  color: #1a237e;
+  border-bottom-color: #1a237e;
+  background-color: #f8f9fa;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #1a237e;
+}
+
+#cancel-tab h3 {
+  color: #d32f2f;
+}
+
 .message {
   margin-top: 20px;
   padding: 10px;

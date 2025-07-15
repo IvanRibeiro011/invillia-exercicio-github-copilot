@@ -21,23 +21,52 @@
         </div>
       </section>
 
-      <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
-          </div>
-          <div class="form-group">
-            <label for="activity">Select Activity:</label>
-            <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
-            </select>
-          </div>
-          <button type="submit">Sign Up</button>
-        </form>
-        <div id="message" class="hidden"></div>
+      <section id="registration-container">
+        <div class="tab-container">
+          <button class="tab-button active" data-tab="signup">Sign Up</button>
+          <button class="tab-button" data-tab="cancel">Cancel Registration</button>
+        </div>
+
+        <div id="signup-tab" class="tab-content active">
+          <h3>Sign Up for an Activity</h3>
+          <form id="signup-form">
+            <div class="form-group">
+              <label for="email">Student Email:</label>
+              <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            </div>
+            <div class="form-group">
+              <label for="activity">Select Activity:</label>
+              <select id="activity" required>
+                <option value="">-- Select an activity --</option>
+                <!-- Activity options will be loaded here -->
+              </select>
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+          <div id="message" class="hidden"></div>
+        </div>
+
+        <div id="cancel-tab" class="tab-content">
+          <h3>Cancel Registration</h3>
+          <form id="cancel-form">
+            <div class="form-group">
+              <label for="cancel-activity">Select Activity:</label>
+              <select id="cancel-activity" required>
+                <option value="">-- Select an activity --</option>
+                <!-- Activity options will be loaded here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cancel-participant">Select Participant to Cancel:</label>
+              <select id="cancel-participant" required disabled>
+                <option value="">-- First select an activity --</option>
+                <!-- Participant options will be loaded here -->
+              </select>
+            </div>
+            <button type="submit" class="cancel-button">Cancel Registration</button>
+          </form>
+          <div id="cancel-message" class="hidden"></div>
+        </div>
       </section>
     </main>
 
